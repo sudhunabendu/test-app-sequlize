@@ -9,7 +9,6 @@ var jwt = require("jsonwebtoken");
 
 
 exports.signup = (req, res) => {
-    // Save User to Database
     User.create({
         first_name: req.body.first_name,
         last_name: req.body.last_name,
